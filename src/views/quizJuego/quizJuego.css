@@ -1,0 +1,21 @@
+.all_container_options{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_options{
+    max-width: 580px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (width < 550px) {
+    .all_container_options{
+        height: calc(100vh - 82px);
+        padding-top: 10px;
+        align-items: start;
+    }
+}   

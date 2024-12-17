@@ -1,0 +1,32 @@
+.container_button{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.all_container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (width < 550px){
+
+    .container_button{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .all_container{
+        height: calc(100vh - 82px);
+    }
+
+    .container_button .button_quiz{
+        width: 100%;
+    }
+
+}

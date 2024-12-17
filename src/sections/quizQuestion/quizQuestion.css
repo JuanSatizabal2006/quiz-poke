@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+.all_container_quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_quiz{
+    /*Contenedor padre de todo el quiz*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quiz_pokemon{
+    /*Contenedor donde se encuentra la imagen del pokemon y el texto*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_quiz{
+    /*Imagen del pokemon*/
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(0px 0px 15px var(--azulNeon)) contrast(0%);
+    transition: filter 600ms ease-in;
+}
+
+.revelar{
+    filter: drop-shadow(0px 0px 15px var(--azulNeon)) contrast(100%) !important;
+}
+
+.container_aviso{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 275px;
+    align-items: center;
+}
+
+.pokemon_text{
+    color: var(--azulNeon);
+    font-family: 'Teko';
+    text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
+    text-align: center;
+    flex-grow: 1;
+    font-size: 10em;
+}
+
+.icon_next{
+    color: var(--azulNeon);
+    font-size: 2em;
+    text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
+    text-align: center;
+    width: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--azulNeon);
+    cursor: pointer;
+    transition: all ease-in .1s;
+}
+
+.icon_next:hover{
+    box-shadow: 0px 0px 15px 0px var(--azulNeon);
+}
+
+.respuesta{
+    font-size: 4.2em !important;
+}
+
+.ocultar{
+    display: none;
+}
+
+/*Opciones del quiz*/
+.quiz_options{
+    /*Contenedor de todas las opciones*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 110px;
+}
+
+/* loading */
+.container_load{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (width < 550px){
+    .quiz_pokemon{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .img_quiz{
+        width: 220px;
+        height: 220px;
+    }
+
+    .container_aviso{
+        padding-inline: 20px;
+        width: auto;
+    }
+
+    .pokemon_text{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 70px;
+    }
+}

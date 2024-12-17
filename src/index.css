@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+:root{
+    --fuente: 'Tektur',monospace;
+    --yellow: #fff900; 
+    --orange: #ff6c00;
+    --azulNeon: #40F2FE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+body{
+    background-image: url(/public/img/fondoLadrillos.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Modificaciones al scroll */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+}

@@ -1,0 +1,26 @@
+/*Titulo del quiz, siempre va estar presente*/
+.container_title{
+    height: 80px;/*En el inicio tendrá 100px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_quiz{
+    color: var(--azulNeon);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px var(--azulNeon) , 0px 0px 2px var(--azulNeon);
+    font-size: 2em;/*En el inicio tendrá 2.5em*/
+    text-align: center;
+}
+
+@media screen and (width < 550px){
+    .container_title{
+        height: auto;/*En el inicio tendrá 100px*/
+        padding: 10px;
+    }
+    .title_quiz{
+        font-size: 1.5em;/*En el inicio tendrá 2.5em*/
+    }
+}
